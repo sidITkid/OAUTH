@@ -1,0 +1,49 @@
+body
+{
+    background-color:rgb(91, 219, 31);
+    
+}
+
+.texts h1
+{
+    margin-left: 45%;
+    font-size: 45px;    
+}
+.texts{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.button
+{
+    margin-left: 1%;
+    opacity: .7;
+    color: chartreuse;
+}
+
+.button :nth-child(2)
+{
+    margin-left: 10px;
+}
+
+#image
+{
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+#project
+{
+    width: 100%;
+    height: 50%;
+}
+#project h2
+{
+    margin-top: 2%;
+    margin-left: 33%;
+}
+#project p
+{
+    margin-top:1%;
+    margin-left: 23%;
+}

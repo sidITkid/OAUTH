@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>LOG IN PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background-image: url(bckgforrespo.jpg);
+    }
+
+    .wrap {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 80px;
+        padding: 40px;
+        background: teal;
+        border: 5px;
+        border-radius: 5mm;
+    }
+
+    .wrap h2 {
+        font-size: 30px;
+        margin: relative;
+        margin-top: -5px;
+        margin-left: 135px;
+        color: darkgoldenrod;
+    }
+    .text1 {
+        padding: 30px;
+        font-style: oblique;
+        font-size: 20px;
+    }
+
+    #Namel {
+         margin-left: 14px;
+    }
+
+    #Email {
+         margin-left: 14px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=cpassword]
+    {
+        width: 100%;
+        padding: 6px;
+        margin-top: 8px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+
+    }
+    
+    #Password {
+        margin-left: 14px;
+        margin-top: 10px;
+    }
+
+    #CPassword {
+        margin-left: 12px;
+        margin-top: 10px;
+    }
+
+    #button1 {
+        margin-top: 20px;
+        margin-left: 120px;
+        width: 41%;
+        height: 5%;
+        border-radius: 10px;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    #button1:hover {
+        background-color: blue;
+        color: white;
+    }
+
+</style>
+
+<body>
+    <div class="wrap">
+        <h2>SIGN UP</h2>
+        <form action="loggedin.html" onsubmit = "return idcreated()" >
+                <label id="Namel">Name</label><br>
+                <input type="text" placeholder="name" id="signname"><br>
+                
+                <label id="Email">E-mail</label><br>
+                <input type="email" placeholder="email" id="signmail"><br>
+                
+                <label id="Password" >Password</label><br>                
+                <input type="password" placeholder="password" id="signpass"><br>
+                
+                <label id="CPassword">Confirm-Password</label><br>
+                <input type="password" placeholder="confirm-password" id="signconf"><br>
+                
+                <input type="submit" id="button1">
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function idcreated()
+    {
+        var name = document.getElementById("signname");
+        var mail = document.getElementById("signmail");
+        var password = document.getElementById("signpass");
+        var cpassword = document.getElementById("signconf");
+        if(!signname.isEmpty())
+        {
+            if(signpass.value==signconf.value)
+            {
+
+                if(signname.value.isEmpty())
+                return true;
+                else
+                {
+                     return false;
+                    alert("enter name");
+                   
+                }
+            //document.write(signname.value + "\n" + "id created \n" );
+            //document.write("HI! " + signname.value + "  WELCOME");
+            }
+        }
+
+        else
+        {
+            if(signname.isEmpty())
+            document.write("enter the name");
+            return false;
+        }
+    }
+</script>
+
+
+</html>
